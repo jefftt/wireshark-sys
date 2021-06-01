@@ -57,10 +57,21 @@ fn main() {
     println!("cargo:rustc-link-lib=static=wsutil");
     println!("cargo:rustc-link-lib=static=wiretap");
     println!("cargo:rustc-link-lib=gcrypt");
+    println!("cargo:rustc-link-lib=gnutls");
     println!("cargo:rustc-link-lib=z");
     println!("cargo:rustc-link-lib=glib-2.0");
     println!("cargo:rustc-link-lib=gmodule-2.0");
     println!("cargo:rustc-link-lib=gthread-2.0");
+    println!("cargo:rustc-link-lib=lua5.2");
+    println!("cargo:rustc-link-lib=cares");
+    println!("cargo:rustc-link-lib=xml2");
+    println!("cargo:rustc-link-lib=zstd");
+    println!("cargo:rustc-link-lib=lz4");
+    println!("cargo:rustc-link-lib=snappy");
+    println!("cargo:rustc-link-lib=nghttp2");
+    println!("cargo:rustc-link-lib=krb5");
+    println!("cargo:rustc-link-lib=k5crypto");
+    println!("cargo:rustc-link-lib=brotlidec");
 
     let out_path = PathBuf::from(env::var("OUT_DIR").unwrap());
 
